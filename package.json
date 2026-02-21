@@ -1,0 +1,17 @@
+{
+  "name": "simple-calendar",
+  "private": true,
+  "scripts": {
+    "dev:api": "npm --prefix calendar-api run dev",
+    "dev:web": "npm --prefix calendar-web run dev",
+    "build:api": "npm --prefix calendar-api run build",
+    "build:web": "npm --prefix calendar-web run build",
+    "start:api": "npm --prefix calendar-api run start",
+    "start:web": "npm --prefix calendar-web run start",
+    "typecheck:api": "npm --prefix calendar-api run typecheck",
+    "typecheck:web": "npm --prefix calendar-web run typecheck",
+    "lint:web": "npm --prefix calendar-web run lint",
+    "format:web": "npm --prefix calendar-web run format",
+    "format:check:web": "npm --prefix calendar-web run format:check"
+  }
+}

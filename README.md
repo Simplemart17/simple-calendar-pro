@@ -18,8 +18,17 @@ Project structure:
 ## Node version
 - `.nvmrc` is pinned to Node `22`.
 
+## Supabase keys
+- Backend uses latest Supabase key model.
+- Configure `SUPABASE_PUBLISHABLE_KEY` (required) and `SUPABASE_SECRET_KEY` (recommended for backend privileged operations).
+
 ## Key endpoint implemented
 - `POST /api/scheduling/bookings`
   - idempotency key support
   - slot conflict protection
   - Supabase persistence path
+
+## Migrations (Supabase CLI pattern)
+- Location: `supabase/migrations/*.sql`
+- Create: `supabase migration new <name>`
+- Apply: `supabase db push`
