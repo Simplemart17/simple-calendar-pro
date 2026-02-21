@@ -810,6 +810,7 @@ Critical service-level telemetry:
 - **API Security**: Rate limiting, request validation, and CORS configuration
 - **Data Encryption**: Encryption at rest and in transit for all sensitive data
 - **Compliance**: GDPR, CCPA compliance with automated data governance
+- **API Key Model**: Supabase publishable keys for client/public contexts and secret keys for backend server contexts (legacy anon/service_role naming deprecated)
 
 ## 9. Background Job Infrastructure
 
