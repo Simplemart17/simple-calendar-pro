@@ -13,7 +13,7 @@ export const createBookingSchema = z.object({
   client: bookingClientSchema,
   startTime: z.string().datetime(),
   endTime: z.string().datetime(),
-  metadata: z.record(z.unknown()).optional().default({})
+  metadata: z.record(z.string(), z.unknown()).optional().default({})
 });
 
 export type CreateBookingInput = z.infer<typeof createBookingSchema>;
